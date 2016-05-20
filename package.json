@@ -1,0 +1,44 @@
+{
+  "name": "generator-screwdriver",
+  "version": "1.0.0",
+  "description": "Make a new npm module for use in the Screwdriver project",
+  "main": "app/index.js",
+  "scripts": {
+    "pretest": "jscs .",
+    "test": "jenkins-mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:screwdriver-cd/generator-screwdriver.git"
+  },
+  "homepage": "https://github.com/screwdriver-cd/generator-screwdriver",
+  "bugs": "https://github.com/screwdriver-cd/generator-screwdriver/issues",
+  "keywords": [
+    "screwdriver",
+    "yahoo",
+    "yeoman-generator"
+  ],
+  "license": "BSD-3-Clause",
+  "author": "St. John Johnson <st.john.johnson@gmail.com",
+  "contributors": [
+    "Dao Lam <d2lam@yahoo-inc.com>",
+    "Darren Matsumoto <aeneascorrupt@gmail.com>",
+    "Jeremiah Wuenschel <jer@yahoo-inc.com>",
+    "Noah Katzman <nkatzman@yahoo-inc.com>",
+    "Peter Peterson <jedipetey@gmail.com>",
+    "St. John Johnson <st.john.johnson@gmail.com",
+    "Tiffany Kyi <tiffanykyi@gmail.com>"
+  ],
+  "files": [
+    "generators"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.23.0"
+  },
+  "devDependencies": {
+    "jenkins-mocha": "^2.6.0",
+    "jscs": "^3.0.3",
+    "yeoman-assert": "^2.0.0",
+    "yeoman-test": "^1.0.0"
+  }
+}
