@@ -60,9 +60,12 @@ module.exports = yeoman.Base.extend({
             'wercker.yml',
             'test/index.test.js'
         ].forEach((template) => {
+            const from = /^\./.test(template) ? template.substr(1) : template;
+            const to = template;
+
             this.fs.copy(
-                this.templatePath(template),
-                this.destinationPath(template)
+                this.templatePath(from),
+                this.destinationPath(to)
             );
         });
 
