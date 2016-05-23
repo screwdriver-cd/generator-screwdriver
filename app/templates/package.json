@@ -4,7 +4,7 @@
   "description": "<%= description %>",
   "main": "index.js",
   "scripts": {
-    "pretest": "jscs .",
+    "pretest": "eslint .",
     "test": "jenkins-mocha --recursive"
   },
   "repository": {
@@ -30,8 +30,11 @@
   ],
   "devDependencies": {
     "chai": "^3.5.0",
-    "jenkins-mocha": "^2.6.0",
-    "jscs": "^3.0.3"
+    "eslint-config-screwdriver": "^1.0.0",
+    "eslint-plugin-import": "^1.8.0",
+    "eslint-plugin-jsx-a11y": "^1.2.2",
+    "eslint-plugin-react": "^5.1.1",
+    "jenkins-mocha": "^2.6.0"
   },
   "dependencies": {}
 }
