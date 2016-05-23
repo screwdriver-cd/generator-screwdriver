@@ -30,7 +30,7 @@
     "Tiffany Kyi <tiffanykyi@gmail.com>"
   ],
   "files": [
-    "generators"
+    "app"
   ],
   "dependencies": {
     "yeoman-generator": "^0.23.0"
