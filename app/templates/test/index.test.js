@@ -1,9 +1,7 @@
-/*global describe, it */
-'use strict';
 const assert = require('chai').assert;
 
-describe('index test', function () {
-    it('fails', function () {
+describe('index test', () => {
+    it('fails', () => {
         assert.isTrue(false);
     });
 });

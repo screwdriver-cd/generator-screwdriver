@@ -1,15 +1,14 @@
-'use strict';
-let yeoman = require('yeoman-generator');
+const yeoman = require('yeoman-generator');
 
 module.exports = yeoman.Base.extend({
-    prompting: function () {
+    prompting: function prompting() {
         const prompts = [
             {
                 type: 'input',
                 name: 'name',
                 message: 'Module Name (without screwdriver-)',
                 default: this.appname, // Default to current folder name
-                validate: function (name) {
+                validate: function validate(name) {
                     return /^[a-z0-9-]+$/.test(name);
                 }
             },
@@ -39,21 +38,22 @@ module.exports = yeoman.Base.extend({
                 type: 'input',
                 name: 'wercker',
                 message: 'Wercker Share Key',
-                validate: function (key) {
+                validate: function validate(key) {
                     return key.length === 32;
                 }
-            },
+            }
         ];
 
-        return this.prompt(prompts).then(function (props) {
+        return this.prompt(prompts).then((props) => {
             this.props = props;
-        }.bind(this));
+        });
     },
 
-    writing: function () {
+    writing: function writing() {
         [
             '.gitignore',
-            '.jscsrc',
+            '.eslintrc.json',
+            '.eslintignore',
             'index.js',
             'CONTRIBUTING.md',
             'LICENSE',
@@ -81,7 +81,7 @@ module.exports = yeoman.Base.extend({
         });
     },
 
-    install: function () {
+    install: function install() {
         this.installDependencies();
     }
 });

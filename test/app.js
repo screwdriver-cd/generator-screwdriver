@@ -1,12 +1,9 @@
-/* global before, describe, it */
-'use strict';
-let path = require('path');
-let assert = require('yeoman-assert');
-let helpers = require('yeoman-test');
+const path = require('path');
+const assert = require('yeoman-assert');
+const helpers = require('yeoman-test');
 
-describe('generator-screwdriver:app', function () {
-    before(function () {
-        return helpers.run(path.join(__dirname, '../app'))
+describe('generator-screwdriver:app', () => {
+    before(() => helpers.run(path.join(__dirname, '../app'))
             .withPrompts({
                 name: 'foo-bar',
                 display: 'Foo Bar',
@@ -15,20 +12,21 @@ describe('generator-screwdriver:app', function () {
                 description: 'Long name for a module',
                 wercker: '12345678901234567890123456789012'
             })
-            .toPromise();
-    });
+            .toPromise()
+    );
 
-    it('creates files', function () {
+    it('creates files', () => {
         assert.file([
             '.gitignore',
-            '.jscsrc',
+            '.eslintrc.json',
+            '.eslintignore',
             'index.js',
             'LICENSE',
             'CONTRIBUTING.md',
             'package.json',
             'README.md',
             'wercker.yml',
-            'test/index.test.js',
+            'test/index.test.js'
         ]);
     });
 });
