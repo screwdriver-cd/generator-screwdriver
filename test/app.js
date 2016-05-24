@@ -1,3 +1,4 @@
+'use strict';
 const path = require('path');
 const assert = require('yeoman-assert');
 const helpers = require('yeoman-test');
@@ -18,7 +19,7 @@ describe('generator-screwdriver:app', () => {
     it('creates files', () => {
         assert.file([
             '.gitignore',
-            '.eslintrc.json',
+            '.eslintrc.yaml',
             '.eslintignore',
             'index.js',
             'LICENSE',
