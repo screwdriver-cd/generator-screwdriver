@@ -1,3 +1,4 @@
+'use strict';
 const yeoman = require('yeoman-generator');
 
 module.exports = yeoman.Base.extend({
@@ -52,7 +53,7 @@ module.exports = yeoman.Base.extend({
     writing: function writing() {
         [
             '.gitignore',
-            '.eslintrc.json',
+            '.eslintrc.yaml',
             '.eslintignore',
             'index.js',
             'CONTRIBUTING.md',
