@@ -7,8 +7,7 @@ module.exports = yeoman.Base.extend({
             {
                 type: 'input',
                 name: 'name',
-                message: 'Module Name (without screwdriver-)',
-                default: this.appname, // Default to current folder name
+                message: 'Name (usually Git Repo name)',
                 validate: function validate(name) {
                     return /^[a-z0-9-]+$/.test(name);
                 }
@@ -16,12 +15,12 @@ module.exports = yeoman.Base.extend({
             {
                 type: 'input',
                 name: 'display',
-                message: 'Display Name'
+                message: 'Display Name (for the README)'
             },
             {
                 type: 'input',
                 name: 'description',
-                message: 'Module Description'
+                message: 'Description'
             },
             {
                 type: 'input',
