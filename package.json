@@ -33,6 +33,7 @@
     "app"
   ],
   "dependencies": {
+    "git-label": "^4.1.1",
     "yeoman-generator": "^0.23.0"
   },
   "devDependencies": {

@@ -5,10 +5,11 @@
 
 This Yeoman generator creates a new npm module pre-loaded with:
  - License
- - Readme with a variety of badges
+ - README with a variety of badges
  - Contributing doc
  - JSCS and JSHint configs
  - Wercker config with CD support
+ - Labels for your Github issues and pull requests
 
 ## Usage
 
