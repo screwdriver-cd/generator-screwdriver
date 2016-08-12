@@ -1,4 +1,6 @@
 'use strict';
+const gitLabel = require('git-label');
+const labels = require('./defaults/labels.json');
 const yeoman = require('yeoman-generator');
 
 module.exports = yeoman.Base.extend({
@@ -41,6 +43,11 @@ module.exports = yeoman.Base.extend({
                 validate: function validate(key) {
                     return key.length === 32;
                 }
+            },
+            {
+                type: 'password',
+                name: 'token',
+                message: 'Github Token'
             }
         ];
 
@@ -79,6 +86,17 @@ module.exports = yeoman.Base.extend({
                 this.props
             );
         });
+    },
+
+    addLabels: function addLabels() {
+        const config = {
+            api: 'https://api.github.com',
+            repo: `screwdriver-cd/${this.props.name}`,
+            token: this.props.token
+        };
+
+        // add specified labels to a repo
+        gitLabel.add(config, labels);
     },
 
     install: function install() {

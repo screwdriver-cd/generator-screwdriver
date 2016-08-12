@@ -1,0 +1,27 @@
+[
+  { "name": "change/major", "color": "#FF8707" },
+  { "name": "change/minor", "color": "#FFB850" },
+  { "name": "change/patch", "color": "#FFCCB3" },
+
+  { "name": "feedback/help wanted", "color": "#FF389F" },
+  { "name": "feedback/question", "color": "#FF389F" },
+
+  { "name": "priority/high", "color": "#EE3F46" },
+  { "name": "priority/low", "color": "#91ca55" },
+  { "name": "priority/medium", "color": "#fbca04" },
+
+  { "name": "review/with reporter", "color": "#5EBEFF" },
+  { "name": "review/with team", "color": "#5EBEFF" },
+
+  { "name": "status/approved", "color": "#c2e0c6" },
+  { "name": "status/blocked", "color": "#000000" },
+  { "name": "status/duplicate", "color": "#ffffff" },
+  { "name": "status/in progress", "color": "#fef2c0" },
+  { "name": "status/invalid", "color": "#ffffff" },
+  { "name": "status/wontfix", "color": "#ffffff" },
+
+  { "name": "type/bug", "color": "#c5def5" },
+  { "name": "type/documentation", "color": "#c5def5" },
+  { "name": "type/enhancement", "color": "#c5def5" },
+  { "name": "type/feature", "color": "#c5def5" }
+]
