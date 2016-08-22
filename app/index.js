@@ -1,6 +1,7 @@
 'use strict';
 const gitLabel = require('git-label');
-const labels = require('./defaults/labels.json');
+const oldLabels = require('./defaults/old-labels.json');
+const newLabels = require('./defaults/new-labels.json');
 const yeoman = require('yeoman-generator');
 
 module.exports = yeoman.Base.extend({
@@ -88,6 +89,17 @@ module.exports = yeoman.Base.extend({
         });
     },
 
+    removeDefaultLabels: function removeDefaultLabels() {
+        const config = {
+            api: 'https://api.github.com',
+            repo: `screwdriver-cd/${this.props.name}`,
+            token: this.props.token
+        };
+
+        // remove default labels from a repo
+        gitLabel.remove(config, oldLabels);
+    },
+
     addLabels: function addLabels() {
         const config = {
             api: 'https://api.github.com',
@@ -96,7 +108,7 @@ module.exports = yeoman.Base.extend({
         };
 
         // add specified labels to a repo
-        gitLabel.add(config, labels);
+        gitLabel.add(config, newLabels);
     },
 
     install: function install() {
