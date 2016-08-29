@@ -60,6 +60,7 @@ module.exports = yeoman.Base.extend({
     writing: function writing() {
         [
             '.gitignore',
+            '.editorconfig',
             '.eslintrc.yaml',
             '.eslintignore',
             'index.js',
