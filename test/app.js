@@ -10,8 +10,7 @@ describe('generator-screwdriver:app', () => {
                 display: 'Foo Bar',
                 author: 'Robot Man',
                 email: 'robot@example.com',
-                description: 'Long name for a module',
-                wercker: '12345678901234567890123456789012'
+                description: 'Long name for a module'
             })
             .toPromise()
     );
@@ -26,8 +25,8 @@ describe('generator-screwdriver:app', () => {
             'CONTRIBUTING.md',
             'package.json',
             'README.md',
-            'wercker.yml',
-            'test/index.test.js'
+            'test/index.test.js',
+            'screwdriver.yaml'
         ]);
     });
 });
