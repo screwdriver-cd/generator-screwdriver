@@ -1,5 +1,5 @@
 # generator-screwdriver
-[![Version][npm-image]][npm-url] ![Downloads][downloads-image] [![Build Status][wercker-image]][wercker-url] [![Open Issues][issues-image]][issues-url] [![Dependency Status][daviddm-image]][daviddm-url] ![License][license-image]
+[![Version][npm-image]][npm-url] ![Downloads][downloads-image] [![Build Status][status-image]][status-url] [![Open Issues][issues-image]][issues-url] [![Dependency Status][daviddm-image]][daviddm-url] ![License][license-image]
 
 > Yeoman generator for building Screwdriver Node Modules
 
@@ -36,7 +36,7 @@ Code licensed under the BSD 3-Clause license. See LICENSE file for terms.
 [license-image]: https://img.shields.io/npm/l/generator-screwdriver.svg
 [issues-image]: https://img.shields.io/github/issues/screwdriver-cd/generator-screwdriver.svg
 [issues-url]: https://github.com/screwdriver-cd/generator-screwdriver/issues
-[wercker-image]: https://app.wercker.com/status/3471515bed0f8ad06b51b7db148627cf
-[wercker-url]: https://app.wercker.com/project/bykey/3471515bed0f8ad06b51b7db148627cf
+[status-image]: https://cd.screwdriver.cd/pipelines/1788286d20de6dfdcb8eb0335c00492bfd0dff40/badge
+[status-url]: https://cd.screwdriver.cd/pipelines/1788286d20de6dfdcb8eb0335c00492bfd0dff40
 [daviddm-image]: https://david-dm.org/screwdriver-cd/generator-screwdriver.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/screwdriver-cd/generator-screwdriver

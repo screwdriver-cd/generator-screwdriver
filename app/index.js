@@ -38,14 +38,6 @@ module.exports = yeoman.Base.extend({
                 default: this.user.git.email()
             },
             {
-                type: 'input',
-                name: 'wercker',
-                message: 'Wercker Share Key',
-                validate: function validate(key) {
-                    return key.length === 32;
-                }
-            },
-            {
                 type: 'password',
                 name: 'token',
                 message: 'Github Token'
@@ -66,8 +58,8 @@ module.exports = yeoman.Base.extend({
             'index.js',
             'CONTRIBUTING.md',
             'LICENSE',
-            'wercker.yml',
-            'test/index.test.js'
+            'test/index.test.js',
+            'screwdriver.yaml'
         ].forEach((template) => {
             const from = /^\./.test(template) ? template.substr(1) : template;
             const to = template;
