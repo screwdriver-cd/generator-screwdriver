@@ -40,7 +40,7 @@
     "chai": "^3.5.0",
     "eslint": "^3.2.2",
     "eslint-config-screwdriver": "^2.0.0",
-    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-import": "^2.0.0",
     "jenkins-mocha": "^3.0.4",
     "yeoman-assert": "^2.0.0",
     "yeoman-test": "^1.0.0"
