@@ -1,4 +1,5 @@
 'use strict';
+
 const gitLabel = require('git-label');
 const oldLabels = require('./defaults/old-labels.json');
 const newLabels = require('./defaults/new-labels.json');

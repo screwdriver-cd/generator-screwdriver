@@ -36,7 +36,7 @@ Code licensed under the BSD 3-Clause license. See LICENSE file for terms.
 [license-image]: https://img.shields.io/npm/l/generator-screwdriver.svg
 [issues-image]: https://img.shields.io/github/issues/screwdriver-cd/generator-screwdriver.svg
 [issues-url]: https://github.com/screwdriver-cd/generator-screwdriver/issues
-[status-image]: https://cd.screwdriver.cd/pipelines/1788286d20de6dfdcb8eb0335c00492bfd0dff40/badge
-[status-url]: https://cd.screwdriver.cd/pipelines/1788286d20de6dfdcb8eb0335c00492bfd0dff40
+[status-image]: https://cd.screwdriver.cd/pipelines/a7519be0eeb8f81f865dc31c343b3f272b309408/badge
+[status-url]: https://cd.screwdriver.cd/pipelines/a7519be0eeb8f81f865dc31c343b3f272b309408
 [daviddm-image]: https://david-dm.org/screwdriver-cd/generator-screwdriver.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/screwdriver-cd/generator-screwdriver
