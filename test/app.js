@@ -19,6 +19,7 @@ describe('generator-screwdriver:app', () => {
     it('creates files', () => {
         assert.file([
             '.gitignore',
+            '.npmignore',
             '.eslintrc.yaml',
             '.eslintignore',
             'index.js',

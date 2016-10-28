@@ -8,7 +8,7 @@ This Yeoman generator creates a new npm module pre-loaded with:
  - README with a variety of badges
  - Contributing doc
  - JSCS and JSHint configs
- - Wercker config with CD support
+ - Screwdriver config
  - Labels for your Github issues and pull requests
 
 ## Usage
