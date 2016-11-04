@@ -4,7 +4,9 @@ const path = require('path');
 const assert = require('yeoman-assert');
 const helpers = require('yeoman-test');
 
-describe('generator-screwdriver:app', () => {
+describe('generator-screwdriver:app', function () {
+    this.timeout(3000);
+
     before(() => helpers.run(path.join(__dirname, '../app'))
             .withPrompts({
                 name: 'foo-bar',
@@ -28,6 +30,7 @@ describe('generator-screwdriver:app', () => {
             'package.json',
             'README.md',
             'test/index.test.js',
+            'test/.eslintrc.yaml',
             'screwdriver.yaml'
         ]);
     });
