@@ -61,6 +61,7 @@ module.exports = yeoman.Base.extend({
             'CONTRIBUTING.md',
             'LICENSE',
             'test/index.test.js',
+            'test/.eslintrc.yaml',
             'screwdriver.yaml'
         ].forEach((template) => {
             const from = /^\./.test(template) ? template.substr(1) : template;
