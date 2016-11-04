@@ -5,7 +5,7 @@
   "main": "app/index.js",
   "scripts": {
     "pretest": "eslint .",
-    "test": "jenkins-mocha --recursive"
+    "test": "jenkins-mocha --recursive --timeout=3000"
   },
   "repository": {
     "type": "git",
@@ -38,9 +38,8 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "eslint": "^3.2.2",
-    "eslint-config-screwdriver": "^2.0.0",
-    "eslint-plugin-import": "^2.0.0",
+    "eslint": "^3.9.1",
+    "eslint-config-screwdriver": "^2.0.9",
     "jenkins-mocha": "^3.0.4",
     "yeoman-assert": "^2.0.0",
     "yeoman-test": "^1.0.0"
