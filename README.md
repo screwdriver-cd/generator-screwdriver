@@ -34,9 +34,9 @@ Code licensed under the BSD 3-Clause license. See LICENSE file for terms.
 [npm-url]: https://npmjs.org/package/generator-screwdriver
 [downloads-image]: https://img.shields.io/npm/dt/generator-screwdriver.svg
 [license-image]: https://img.shields.io/npm/l/generator-screwdriver.svg
-[issues-image]: https://img.shields.io/github/issues/screwdriver-cd/generator-screwdriver.svg
-[issues-url]: https://github.com/screwdriver-cd/generator-screwdriver/issues
-[status-image]: https://cd.screwdriver.cd/pipelines/a7519be0eeb8f81f865dc31c343b3f272b309408/badge
-[status-url]: https://cd.screwdriver.cd/pipelines/a7519be0eeb8f81f865dc31c343b3f272b309408
+[issues-image]: https://img.shields.io/github/issues/screwdriver-cd/screwdriver.svg
+[issues-url]: https://github.com/screwdriver-cd/screwdriver/issues
+[status-image]: https://cd.screwdriver.cd/pipelines/11/badge
+[status-url]: https://cd.screwdriver.cd/pipelines/11
 [daviddm-image]: https://david-dm.org/screwdriver-cd/generator-screwdriver.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/screwdriver-cd/generator-screwdriver
