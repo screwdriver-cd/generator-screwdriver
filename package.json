@@ -35,13 +35,13 @@
   ],
   "dependencies": {
     "git-label": "^4.1.1",
-    "yeoman-generator": "^0.24.1"
+    "yeoman-generator": "^1.1.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^3.9.1",
     "eslint-config-screwdriver": "^2.0.9",
-    "jenkins-mocha": "^3.0.4",
+    "jenkins-mocha": "^4.1.1",
     "yeoman-assert": "^2.0.0",
     "yeoman-test": "^1.0.0"
   },
