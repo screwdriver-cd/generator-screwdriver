@@ -6,7 +6,7 @@
 This Yeoman generator creates a new npm module pre-loaded with:
  - License
  - README with a variety of badges
- - Contributing doc
+ - CONTRIBUTING doc
  - JSCS and JSHint configs
  - Screwdriver config
  - Labels for your Github issues and pull requests
