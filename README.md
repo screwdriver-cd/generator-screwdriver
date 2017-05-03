@@ -10,7 +10,7 @@ This Yeoman generator creates a new npm module pre-loaded with:
  - JSCS and JSHint configs
  - Screwdriver config
  - package.json
- - Labels for your Github issues and pull requests
+ - Labels for Github issues and pull requests
 
 ## Usage
 
