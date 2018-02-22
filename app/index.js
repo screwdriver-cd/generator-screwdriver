@@ -3,10 +3,10 @@
 const gitLabel = require('git-label');
 const oldLabels = require('./defaults/old-labels.json');
 const newLabels = require('./defaults/new-labels.json');
-const yeoman = require('yeoman-generator');
+const Yeoman = require('yeoman-generator');
 
-module.exports = yeoman.Base.extend({
-    prompting: function prompting() {
+module.exports = class extends Yeoman {
+    prompting() {
         const prompts = [
             {
                 type: 'input',
@@ -48,9 +48,9 @@ module.exports = yeoman.Base.extend({
         return this.prompt(prompts).then((props) => {
             this.props = props;
         });
-    },
+    }
 
-    writing: function writing() {
+    writing() {
         [
             '.gitignore',
             '.npmignore',
@@ -83,9 +83,9 @@ module.exports = yeoman.Base.extend({
                 this.props
             );
         });
-    },
+    }
 
-    removeDefaultLabels: function removeDefaultLabels() {
+    removeDefaultLabels() {
         const config = {
             api: 'https://api.github.com',
             repo: `screwdriver-cd/${this.props.name}`,
@@ -94,9 +94,9 @@ module.exports = yeoman.Base.extend({
 
         // remove default labels from a repo
         gitLabel.remove(config, oldLabels);
-    },
+    }
 
-    addLabels: function addLabels() {
+    addLabels() {
         const config = {
             api: 'https://api.github.com',
             repo: `screwdriver-cd/${this.props.name}`,
@@ -105,9 +105,9 @@ module.exports = yeoman.Base.extend({
 
         // add specified labels to a repo
         gitLabel.add(config, newLabels);
-    },
+    }
 
-    install: function install() {
+    install() {
         this.installDependencies();
     }
-});
+};
