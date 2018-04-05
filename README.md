@@ -12,20 +12,44 @@ This Yeoman generator creates a new npm module pre-loaded with:
  - package.json
  - Labels for Github issues and pull requests
 
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) >= v8.0.0 (with NPM)
+
 ## Usage
 
-First, install [Yeoman](http://yeoman.io) and generator-screwdriver using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+1. Create a Github repository.
+
+2. Install [Yeoman](http://yeoman.io) and generator-screwdriver using [npm](https://www.npmjs.com/).
 
 ```bash
-npm install -g yo
-npm install -g generator-screwdriver
+$ npm install -g yo
+$ npm install -g generator-screwdriver
 ```
 
-Then generate your new project:
+3. Get a Github token.
+- Go to the create [Github Personal Access Tokens](https://github.com/settings/tokens/new) page
+- Fill in "Token description" with "Screwdriver-token"
+- Select scopes "repo" and "admin:org"
+- Click Generate token
+
+4. Clone your repository and generate your new project.
 
 ```bash
-yo screwdriver
+$ git clone git@github.com:$REPO.git
+$ cd $REPO
+$ yo screwdriver
 ```
+
+5. Create Git commit and push to master.
+
+6. Publish the npm package and add git tags.
+
+```bash
+$ npm publish
+$ git tag v0.0.1 && git push origin --tags
+```
+
 
 ## License
 
