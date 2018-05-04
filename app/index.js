@@ -11,7 +11,7 @@ module.exports = class extends Yeoman {
             {
                 type: 'input',
                 name: 'name',
-                message: 'Name (usually Git Repo name)',
+                message: 'Name (usually Git Repo name, will be prefixed with screwdriver-)',
                 validate: function validate(name) {
                     return /^[a-z0-9-]+$/.test(name);
                 }
