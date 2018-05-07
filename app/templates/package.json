@@ -21,13 +21,16 @@
   "license": "BSD-3-Clause",
   "author": "<%= author %> <<%= email %>>",
   "contributors": [
+    "Brian Wang <brian.wang19@gmail.com>",
+    "Cynthia Li <cynthialix@gmail.com>",
     "Dao Lam <daolam112@gmail.com>",
-    "Darren Matsumoto <aeneascorrupt@gmail.com>",
+    "Filbert Jahja <filidillidally@gmail.com>",
     "Jithin Emmanuel <jithin1987@gmail.com>",
     "Min Zhang <minzhangcmu@gmail.com>",
-    "Peter Peterson <jedipetey@gmail.com>",
+    "Pranav Ravichandran <me@onloop.net>",
     "St. John Johnson <st.john.johnson@gmail.com",
-    "Tiffany Kyi <tiffanykyi@gmail.com>"
+    "Tiffany Kyi <tiffanykyi@gmail.com>",
+    "Zhongtang Tian <tianzhongtang@gmail.com>"
   ],
   "devDependencies": {
     "chai": "^3.5.0",
