@@ -23,7 +23,6 @@
   "contributors": [
     "Dao Lam <daolam112@gmail.com>",
     "Dekus Lam <dekusdenial@hotmail.com>",
-    "Filbert Jahja <filidillidally@gmail.com>",
     "Jithin Emmanuel <jithin1987@gmail.com>",
     "Lakshminarasimhan Parthasarathy <laky@ymail.com>",
     "Min Zhang <minzhangcmu@gmail.com>",
@@ -34,8 +33,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^4.3.0",
-    "eslint-config-screwdriver": "^3.0.0",
-    "jenkins-mocha": "^4.0.0"
+    "eslint-config-screwdriver": "^4.0.0",
+    "jenkins-mocha": "^6.0.0"
   },
   "dependencies": {},
   "release": {
