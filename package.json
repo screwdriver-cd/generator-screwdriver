@@ -40,8 +40,8 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^4.19.1",
-    "eslint-config-screwdriver": "^3.0.1",
-    "jenkins-mocha": "^6.0.0",
+    "eslint-config-screwdriver": "^4.0.0",
+    "jenkins-mocha": "^7.0.0",
     "yeoman-assert": "^3.1.0",
     "yeoman-test": "^1.0.0"
   },

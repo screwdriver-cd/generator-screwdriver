@@ -14,9 +14,7 @@ describe('generator-screwdriver:app', function () {
             author: 'Robot Man',
             email: 'robot@example.com',
             description: 'Long name for a module'
-        })
-        .toPromise()
-    );
+        }).toPromise());
 
     it('creates files', () => {
         assert.file([

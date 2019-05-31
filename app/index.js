@@ -1,9 +1,9 @@
 'use strict';
 
+const Yeoman = require('yeoman-generator');
 const gitLabel = require('git-label');
 const oldLabels = require('./defaults/old-labels.json');
 const newLabels = require('./defaults/new-labels.json');
-const Yeoman = require('yeoman-generator');
 
 module.exports = class extends Yeoman {
     prompting() {
