@@ -25,16 +25,16 @@
     "Dao Lam <daolam112@gmail.com>",
     "Dekus Lam <dekusdenial@hotmail.com>",
     "Jithin Emmanuel <jithin1987@gmail.com>",
+    "Kevin Lu <klu13960@gmail.com>",
     "Lakshminarasimhan Parthasarathy <laky@ymail.com>",
-    "Min Zhang <minzhangcmu@gmail.com>",
-    "St. John Johnson <st.john.johnson@gmail.com",
+    "Pritam Paul <pritam.paul09@hotmail.com>",
     "Tiffany Kyi <tiffanykyi@gmail.com>"
   ],
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^4.19.1",
     "eslint-config-screwdriver": "^4.0.0",
-    "jenkins-mocha": "^7.0.0"
+    "jenkins-mocha": "^8.0.0"
   },
   "dependencies": {},
   "release": {
