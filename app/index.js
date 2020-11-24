@@ -11,7 +11,8 @@ module.exports = class extends Yeoman {
             {
                 type: 'input',
                 name: 'name',
-                message: 'Name (usually Git Repo name, will be prefixed with screwdriver-)',
+                message:
+                    'Name (usually Git Repo name, will be prefixed with screwdriver-)',
                 validate: function validate(name) {
                     return /^[a-z0-9-]+$/.test(name);
                 }
@@ -45,7 +46,7 @@ module.exports = class extends Yeoman {
             }
         ];
 
-        return this.prompt(prompts).then((props) => {
+        return this.prompt(prompts).then(props => {
             this.props = props;
         });
     }
@@ -63,20 +64,14 @@ module.exports = class extends Yeoman {
             'test/index.test.js',
             'test/.eslintrc.yaml',
             'screwdriver.yaml'
-        ].forEach((template) => {
+        ].forEach(template => {
             const from = /^\./.test(template) ? template.substr(1) : template;
             const to = template;
 
-            this.fs.copy(
-                this.templatePath(from),
-                this.destinationPath(to)
-            );
+            this.fs.copy(this.templatePath(from), this.destinationPath(to));
         });
 
-        [
-            'package.json',
-            'README.md'
-        ].forEach((template) => {
+        ['package.json', 'README.md'].forEach(template => {
             this.fs.copyTpl(
                 this.templatePath(template),
                 this.destinationPath(template),
