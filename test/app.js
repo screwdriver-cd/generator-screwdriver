@@ -5,8 +5,6 @@ const assert = require('yeoman-assert');
 const helpers = require('yeoman-test');
 
 describe('generator-screwdriver:app', function() {
-    this.timeout(3000);
-
     before(() =>
         helpers
             .run(path.join(__dirname, '../app'))
