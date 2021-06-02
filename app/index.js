@@ -2,8 +2,11 @@
 
 const Yeoman = require('yeoman-generator');
 const gitLabel = require('git-label');
+const installActions = require('yeoman-generator/lib/actions/install');
 const oldLabels = require('./defaults/old-labels.json');
 const newLabels = require('./defaults/new-labels.json');
+
+Object.assign(Yeoman.prototype, installActions);
 
 module.exports = class extends Yeoman {
     prompting() {
