@@ -13,7 +13,7 @@
     "url": "git@github.com:screwdriver-cd/generator-screwdriver.git"
   },
   "homepage": "https://github.com/screwdriver-cd/generator-screwdriver",
-  "bugs": "https://github.com/screwdriver-cd/generator-screwdriver/issues",
+  "bugs": "https://github.com/screwdriver-cd/screwdriver/issues",
   "keywords": [
     "screwdriver",
     "yahoo",
@@ -38,9 +38,9 @@
     "yeoman-generator": "^5.3.0"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "eslint": "^4.19.1",
-    "eslint-config-screwdriver": "^4.0.0",
+    "chai": "^4.3.4",
+    "eslint": "^7.5.0",
+    "eslint-config-screwdriver": "^5.0.1",
     "mocha": "^8.2.1",
     "mocha-multi-reporters": "^1.5.1",
     "mocha-sonarqube-reporter": "^1.0.2",

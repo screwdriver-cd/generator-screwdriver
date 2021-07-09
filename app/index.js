@@ -14,8 +14,7 @@ module.exports = class extends Yeoman {
             {
                 type: 'input',
                 name: 'name',
-                message:
-                    'Name (usually Git Repo name, will be prefixed with screwdriver-)',
+                message: 'Name (usually Git Repo name, will be prefixed with screwdriver-)',
                 validate: function validate(name) {
                     return /^[a-z0-9-]+$/.test(name);
                 }
@@ -75,11 +74,7 @@ module.exports = class extends Yeoman {
         });
 
         ['package.json', 'README.md'].forEach(template => {
-            this.fs.copyTpl(
-                this.templatePath(template),
-                this.destinationPath(template),
-                this.props
-            );
+            this.fs.copyTpl(this.templatePath(template), this.destinationPath(template), this.props);
         });
     }
 

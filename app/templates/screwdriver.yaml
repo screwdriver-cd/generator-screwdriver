@@ -1,15 +1,17 @@
 shared:
-    image: node:8
+    image: node:12
 
 jobs:
     main:
+        environment:
+            SD_SONAR_OPTS:  "-Dsonar.sources=app -Dsonar.tests=test -Dsonar.javascript.lcov.reportPaths=artifacts/coverage/lcov.info -Dsonar.testExecutionReportPaths=artifacts/report/test.xml"
         requires: [~pr, ~commit]
         steps:
             - install: npm install
             - test: npm test
 
     publish:
-        requires: main
+        requires: [main]
         template: screwdriver-cd/semantic-release
         secrets:
             # Publishing to NPM
