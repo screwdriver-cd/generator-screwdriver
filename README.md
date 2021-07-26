@@ -14,7 +14,7 @@ This Yeoman generator creates a new npm module pre-loaded with:
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) >= v8.0.0 (with NPM)
+- [Node.js](https://nodejs.org/) >= v12.0.0 (with NPM)
 
 ## Usage
 
