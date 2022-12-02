@@ -4,7 +4,7 @@ const path = require('path');
 const assert = require('yeoman-assert');
 const helpers = require('yeoman-test');
 
-describe('generator-screwdriver:app', function() {
+describe('generator-screwdriver:app', function () {
     before(() =>
         helpers
             .run(path.join(__dirname, '../app'))
